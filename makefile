@@ -3,7 +3,7 @@ start:
 	@echo "elo ${PROJECT_NAME} $1"
 opa: 
 	@echo "opa"
-remove_submodule:
+remove:
 #Delete the relevant section from the .gitmodules file.
 	/bin/rm -rf .gitmodules
 	> .gitmodules 
@@ -13,8 +13,10 @@ remove_submodule:
 # ^(\[submodule)(.+(\n))+(?=\[)
 # sed -e "s/^(\[submodule)(.+(\\n))+(?=\[)/gm"
 	@echo "Delete the relevant section from .git/config"
+	@/bin/rm .git/config
+	git init
 #Run git rm --cached path_to_submodule
-	git rm -rf --cached ${CODE_PATH} || true
+	git rm -r --cached ${CODE_PATH} || true
 #Run rm -rf .git/modules/path_to_submodule
 	/bin/rm -rf .git/modules/${CODE_PATH}
 #Commit git commit -m "Removed submodule"
