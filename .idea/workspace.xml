@@ -1,9 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="20ee2600-b229-44f2-b73e-8255d6f7ac90" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/bin/console" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/bootstrap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/bundles.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/jwt/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/packages/cache.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/packages/doctrine.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/packages/doctrine_migrations.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/packages/framework.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/packages/lexik_jwt_authentication.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/packages/nelmio_cors.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/packages/prod/doctrine.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/packages/prod/routing.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/packages/routing.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/packages/security.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/packages/sensio_framework_extra.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/packages/test/framework.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/packages/test/validator.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/packages/validator.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/routes.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/routes/annotations.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/routes/dev/framework.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/dev/dev.BOT_TOKEN.f41697.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/dev/dev.CORS_ALLOW_ORIGIN.221deb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/dev/dev.DATABASE_URL.8ea85a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/dev/dev.JWT_PASSPHRASE.0269d8.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/dev/dev.JWT_PUBLIC_KEY.99997d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/dev/dev.JWT_SECRET_KEY.2b78e9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/dev/dev.JWT_TOKEN_TTL.dd4802.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/dev/dev.MAILER_URL.2d4452.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/dev/dev.encrypt.public.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/dev/dev.list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/prod/prod.BOT_TOKEN.f41697.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/prod/prod.CORS_ALLOW_ORIGIN.221deb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/prod/prod.DATABASE_URL.8ea85a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/prod/prod.JWT_PASSPHRASE.0269d8.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/prod/prod.JWT_PUBLIC_KEY.99997d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/prod/prod.JWT_SECRET_KEY.2b78e9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/prod/prod.JWT_TOKEN_TTL.dd4802.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/prod/prod.MAILER_URL.2d4452.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/prod/prod.encrypt.public.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/secrets/prod/prod.list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/config/services.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/db.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/deploy.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Application/PostParamConverter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/ConsoleCommand/SetWebhookCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Controller/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Controller/TestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/DTO/ScoreDTO.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Entity/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Entity/Answer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Entity/Flag.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Entity/Game.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Entity/Score.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Entity/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Migrations/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Migrations/Version20200322114725.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Migrations/Version20210103221647.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Migrations/Version20210109193151.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Migrations/Version20210109213855.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Migrations/Version20210109232957.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Migrations/Version20210109233702.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Migrations/Version20210110000325.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Repository/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Repository/FlagRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Repository/GameRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Repository/UserRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/src/Serializer/UserNormalizer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flags-api/symfony.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,21 +143,32 @@
       <option name="presentableId" value="Default" />
       <updated>1610495526656</updated>
       <workItem from="1610495527956" duration="3730000" />
-      <workItem from="1610537404380" duration="4703000" />
+      <workItem from="1610537404380" duration="5718000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="571" y="334" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610549577274">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="571" y="334" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1610549577274" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1610549754004">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1610557156741">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1610549754004" />
+    <state width="500" height="445" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1610557156741" />
   </component>
 </project>

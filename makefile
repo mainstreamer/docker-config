@@ -14,10 +14,14 @@ remove_submodule:
 # sed -e "s/^(\[submodule)(.+(\\n))+(?=\[)/gm"
 	@echo "Delete the relevant section from .git/config"
 #Run git rm --cached path_to_submodule
-	git rm -rf --cached ${PATH} || true
+	git rm -rf --cached ${CODE_PATH} || true
 #Run rm -rf .git/modules/path_to_submodule
-	/bin/rm -rf .git/modules/${PATH}
+	/bin/rm -rf .git/modules/${CODE_PATH}
 #Commit git commit -m "Removed submodule"
-	git add .
+	git commit -am "Removed submodule"
 #rm -rf path_to_submodule
-	/bin/rm -rf ${PATH}
+	/bin/rm -rf ${CODE_PATH}
+	
+add_submodule:
+	git submodule add -b ${BRANCH} -- ${GIT_URL} ${CODE_PATH}
+	git submodule update --init
