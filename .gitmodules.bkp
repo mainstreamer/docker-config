@@ -1,4 +1,0 @@
-[submodule "flags-api"]
-	path = flags-api
-	url = git@github.com:mainstreamer/flags-api.git
-	branch = feat/secrets
