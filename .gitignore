@@ -54,3 +54,5 @@
 dev.decrypt*
 *.sql
 presets/.env
+
+.DS_Store
