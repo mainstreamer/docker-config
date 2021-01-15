@@ -51,6 +51,11 @@ RUN chown 1000:1000 /var/log/php/xdebug.log
 
 ADD code /var/www/webapp
 
+## HANDLE PRESETS
+ADD .docker/presets/secrets/dev.decrypt.private.php /var/www/webapp/config/secrets/dev
+ADD .docker/presets/secrets/prod.decrypt.private.php /var/www/webapp/config/secrets/prod
+ADD .docker/presets/db/db.sql /var/www/webapp
+
 WORKDIR /var/www/webapp
 
 RUN useradd -g root www-data & groups

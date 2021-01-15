@@ -27,7 +27,7 @@ insert-key:
 	docker cp ./.docker/presets/secrets/prod.decrypt.private.php php-${PROJECT_NAME}:/var/www/webapp/config/secrets/prod
 	docker exec -it php-${PROJECT_NAME} sh -c "cd /var/www/webapp && bin/console secrets:decrypt-to-local --force -e prod"
 	docker exec -it php-${PROJECT_NAME} sh -c "cd /var/www/webapp && bin/console secrets:decrypt-to-local --force -e dev"
-db-import:
+db:
 	docker cp ./.docker/presets/db/db.sql php-${PROJECT_NAME}:/var/www/webapp
 	docker exec -it php-${PROJECT_NAME} sh -c "bin/console d:d:i db.sql && bin/console d:s:v"
 	docker exec -it php-${PROJECT_NAME} sh -c "cd /var/www/webapp && rm -f db.sql"
