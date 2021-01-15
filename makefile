@@ -1,4 +1,4 @@
-include ./presets/.env
+include .env
 reset:
 #Delete the relevant section from the .gitmodules file.
 	/bin/rm -rf .gitmodules
