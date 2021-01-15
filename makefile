@@ -22,9 +22,12 @@ dockerize:
 	git submodule add -b ${BRANCH} -- ${GIT_URL} ${CODE_PATH}
 	git submodule update --init
 insert-key:
-	docker cp presets/secrets/dev.decrypt.private.php php-${PROJECT_NAME}:/var/www/webapp/config/secrets/dev
+	docker cp ./.docker/presets/secrets/dev.decrypt.private.php php-${PROJECT_NAME}:/var/www/webapp/config/secrets/dev
+	docker cp ./.docker/presets/secrets/prod.decrypt.private.php php-${PROJECT_NAME}:/var/www/webapp/config/secrets/prod
+	docker exec -it php-${PROJECT_NAME} sh -c "cd /var/www/webapp && bin/console secrets:decrypt-to-local --force -e prod"
+	docker exec -it php-${PROJECT_NAME} sh -c "cd /var/www/webapp && bin/console secrets:decrypt-to-local --force -e dev"
 db-import:
-	docker cp presets/db/db.sql php-${PROJECT_NAME}:/var/www/webapp
+	docker cp ./.docker/presets/db/db.sql php-${PROJECT_NAME}:/var/www/webapp
 	docker exec -it php-${PROJECT_NAME} sh -c "bin/console d:d:i db.sql && bin/console d:s:v"
 	docker exec -it php-${PROJECT_NAME} sh -c "cd /var/www/webapp && rm -f db.sql"
 	docker exec -it php-${PROJECT_NAME} sh -c "cd /var/www/webapp && ls -la"
