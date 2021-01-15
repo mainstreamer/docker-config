@@ -27,7 +27,7 @@ update:
 build:
 	docker-compose build
 start:
-	docker-compose up
+	docker-compose up -d
 db:
 	docker cp ./.docker/presets/db/db.sql php-${PROJECT_NAME}:/var/www/webapp
 	docker exec -it php-${PROJECT_NAME} sh -c "bin/console d:d:i db.sql && bin/console d:s:v"
