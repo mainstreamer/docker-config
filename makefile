@@ -21,6 +21,7 @@ reset:
 dockerize:
 	git submodule add -b ${BRANCH} -- ${GIT_URL} ${CODE_PATH}
 	git submodule update --init
+	git submodule update --remote
 insert-key:
 	docker cp ./.docker/presets/secrets/dev.decrypt.private.php php-${PROJECT_NAME}:/var/www/webapp/config/secrets/dev
 	docker cp ./.docker/presets/secrets/prod.decrypt.private.php php-${PROJECT_NAME}:/var/www/webapp/config/secrets/prod
