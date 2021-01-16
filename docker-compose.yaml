@@ -1,4 +1,4 @@
-version: "3.6"
+version: "3.8"
 services:
   php:
     container_name: "php-${PROJECT_NAME}"
@@ -10,14 +10,15 @@ services:
       context: .
       dockerfile: .docker/php-fpm/Dockerfile
     volumes:
+#      - ./code:/var/www/webapp:rw,cached
 #      - .:/var/www/webapp:rw,cached
-      - data-volume:/var/www/webapp:rw,cached
+      - appcode:/var/www/webapp:rw,cached
 #      - uploads:/var/www/webapp/uploads:rw,cached
     depends_on:
       - db
     networks:
       - backend
-  db:
+  db: 
     build:
       context: .
       dockerfile: .docker/mysql/Dockerfile
@@ -42,7 +43,9 @@ services:
       context: .
       dockerfile: .docker/nginx/Dockerfile
 #    volumes:
-##      - ${PROJECT_NAME}-codesync:/var/www/webapp:nocopy
+#      - ./code:/var/www/webapp:rw,cached
+      #      - .:/var/www/webapp:rw,cached
+#      - ${PROJECT_NAME}-codesync:/var/www/webapp:nocopy
 #      - ${PROJECT_NAME}-volume:/var/www/webapp:delegated
     expose:
       - 80
@@ -58,4 +61,10 @@ networks:
     backend:
 volumes:
     db-data: ~
-    data-volume: ~
+    appcode:
+        external: true
+        name: ${PROJECT_NAME}-data
+        driver: nfs
+        driver_opts:
+            device: ./code
+        
