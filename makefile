@@ -24,7 +24,7 @@ init-submodule:
 	git submodule update --init
 update:
 	git submodule update --remote	
-build:
+build: wait
 	docker-compose build
 start:
 	docker-compose up -d
@@ -35,3 +35,5 @@ db:
 run: start message
 message:
 	@echo Hello! I\'m up and running...
+wait:
+	@read -p "Copy secrets into ./docker/presets folder and hit enter to continue"
