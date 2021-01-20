@@ -9,11 +9,6 @@ services:
     build:
       context: .
       dockerfile: .docker/php-fpm/Dockerfile
-    volumes:
-#      - ./code:/var/www/webapp:rw,cached
-#      - .:/var/www/webapp:rw,cached
-      - appcode:/var/www/webapp:rw,cached
-#      - uploads:/var/www/webapp/uploads:rw,cached
     depends_on:
       - db
     networks:
@@ -42,11 +37,6 @@ services:
     build:
       context: .
       dockerfile: .docker/nginx/Dockerfile
-#    volumes:
-#      - ./code:/var/www/webapp:rw,cached
-      #      - .:/var/www/webapp:rw,cached
-#      - ${PROJECT_NAME}-codesync:/var/www/webapp:nocopy
-#      - ${PROJECT_NAME}-volume:/var/www/webapp:delegated
     expose:
       - 80
     ports:
@@ -61,10 +51,3 @@ networks:
     backend:
 volumes:
     db-data: ~
-    appcode:
-        external: true
-        name: ${PROJECT_NAME}-data
-        driver: nfs
-        driver_opts:
-            device: ./code
-        
