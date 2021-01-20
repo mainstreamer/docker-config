@@ -14,7 +14,7 @@ reset:
 #Run rm -rf .git/modules/path_to_submodule
 	/bin/rm -rf .git/modules/${CODE_PATH}
 #Commit git commit -m "Removed submodule"
-	git commit -am "Removed submodule"
+# 	git commit -am "Removed submodule"
 #rm -rf path_to_submodule
 	/bin/rm  -rf ${CODE_PATH}
 	git remote add origin ${GIT_REMOTE_URL}
